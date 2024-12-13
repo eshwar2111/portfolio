@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eshwar B - Portfolio</title>
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollToPlugin.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Eshwar B</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Innovative AI Solutions and Cutting-Edge Projects</h2>
+            <p>I specialize in AI-driven projects, innovative models, and cutting-edge technologies to bring impactful solutions.</p>
+            <a href="#projects" class="btn">Explore My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I’m a software engineer with expertise in AI, machine learning, and building innovative software solutions. I have a strong background in web development and a passion for working on complex problems.</p>
+                <p>I've interned with Sutherland and VIT Chennai, where I gained hands-on experience in AI, machine learning, and software development. I’m also actively involved in Bionary Club, where I served as a judge for a hackathon and am now a student coordinator for an LLM-based event.</p>
+            </div>
+            <div class="about-img">
+                <img src="assets\mypic.jpeg" alt="Eshwar B">
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-cards">
+            <div class="card">
+                <h3>Sutherland</h3>
+                <p><strong>Intern</strong> (June 2023 - August 2023)</p>
+                <p>Worked on building AI-powered solutions for business process automation, focusing on improving customer service platforms.</p>
+            </div>
+            <div class="card">
+                <h3>VIT Chennai</h3>
+                <p><strong>Intern</strong> (May 2023 - July 2023)</p>
+                <p>Worked on research and development of AI models for predictive analytics in healthcare data.</p>
+            </div>
+            <div class="card">
+                <h3>Bionary Club</h3>
+                <p><strong>Student Coordinator</strong> (Present)</p>
+                <p>Coordinating an event on LLM-based applications in AI. Additionally, served as a judge for a hackathon conducted by Bionary Club.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patent Section -->
+<section id="patent">
+    <div class="container">
+        <h2>My Patent</h2>
+        <div class="patent-content">
+            <div class="patent-details">
+                <h3>Smart Agriculture Solution</h3>
+                <p>
+                    I have been awarded a patent for a Smart Agriculture solution, which focuses on optimizing farming practices
+                    through AI and sensor-based technologies. This innovation helps improve crop yield, monitor plant health, and
+                    automate irrigation systems.
+                </p>
+                <p>
+                    This solution is recognized by the Government of India and is a step forward in the field of sustainable farming.
+                </p>
+                <a href="assets\423165-001 (1).pdf" target="_blank" class="btn">View Patent Certificate</a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card" onclick="window.location.href='project1.html'">
+                <h3>Custom LLM Financial Chatbot</h3>
+                <p>Developed a financial chatbot trained on banking regulations to assist users with financial queries.</p>
+                <a href="project1.html" class="btn">View Details</a>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card" onclick="window.location.href='project2.html'">
+                <h3>Legal Document Helper</h3>
+                <p>Built a legal chatbot that assists users in filing legal documents, developed with PyTorch and custom LLMs.</p>
+                <a href="project2.html" class="btn">View Details</a>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card" onclick="window.location.href='project3.html'">
+                <h3>TripSync - AI Travel Assistant</h3>
+                <p>An AI-based travel assistant that helps tourists plan itineraries based on preferences.</p>
+                <a href="project3.html" class="btn">View Details</a>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card" onclick="window.location.href='project4.html'">
+                <h3>Cross-Modal Synthesis GAN</h3>
+                <p>Created a GAN model that generates CT scans from MRI and vice-versa using Pix2Pix architecture.</p>
+                <a href="project4.html" class="btn">View Details</a>
+            </div>
+            <!-- Project 5 -->
+            <div class="project-card" onclick="window.location.href='project5.html'">
+                <h3>ZSL Human Disease Classifier</h3>
+                <p>Built a Zero-Shot Learning classifier for human diseases using BERT and CNN.</p>
+                <a href="project5.html" class="btn">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-details">
+          <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:eshwar211104@gmail.com">eshwar211104@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+918939745999">+91 89397 45999</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/eshwar-b-049a34218/" target="_blank">linkedin.com/in/eshwarb</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/eshwar2111" target="_blank">github.com/eshwarb</a></p>
+            
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Eshwar B. All rights reserved.</p>
+    </footer>
+
+    <!-- GSAP and Custom JS -->
+    <script src="js\script.js"></script>
+</body>
+
+</html>

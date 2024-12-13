@@ -1,0 +1,388 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #222;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff3366;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background: url('assets/images/hero-image.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;  /* Add padding to avoid the content sticking to the edges */
+}
+
+#hero h2 {
+    font-size: 4rem;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;  /* Added space below the heading */
+}
+
+#hero p {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 20px;  /* Added space above the paragraph */
+    margin-bottom: 30px;  /* Increased space below the paragraph */
+}
+
+.btn {
+    background-color: #ff3366;
+    color: white;
+    padding: 12px 25px;  /* Increased button padding for a better clickable area */
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;  /* Added margin on top to create space between the text and button */
+    font-weight: 600;
+}
+
+/* About, Experience, Projects, Contact Sections */
+#about, #experience, #projects, #contact {
+    padding: 60px 20px;
+}
+
+/* About Section */
+#about h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#about .about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#about .about-text {
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-right: 20px;  /* Added margin to avoid sticking to the image */
+}
+
+#about .about-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Experience Section */
+#experience h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.experience-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 20px;  /* Added margin to avoid text and cards sticking together */
+}
+
+.card {
+    background-color: #333;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;  /* Added space below the heading */
+}
+
+.card p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Projects Section */
+/* Projects Section */
+#projects h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: #333;
+    padding: 30px;  /* Increased padding for more space inside the card */
+    width: calc(33.333% - 20px);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-align: center;
+    margin-bottom: 30px;  /* Added margin at the bottom of each card */
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;  /* Added space below the project title */
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;  /* Added space below the project description */
+}
+
+/* Updated Button inside Project Card */
+.project-card .btn {
+    margin-top: 10px;  /* Reduced margin from the description for better balance */
+    padding: 15px 40px;  /* Increased padding for better button size */
+    font-size: 1.1rem;  /* Slightly larger font for better readability */
+    font-weight: 600;  /* Make the text bolder */
+    border-radius: 5px;
+    background-color: #ff3366;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.project-card .btn:hover {
+    background-color: #e02e57; /* Slight color change on hover */
+}
+
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#contact p a {
+    color: #ff3366;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;  /* Added margin at the top to separate the footer from the content */
+}
+
+#patent {
+    background-color: var(--background-dark); /* Use global background variable */
+    color: var(--text-light); /* Use global text color */
+    padding: 60px 20px;
+}
+
+#patent h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color); /* Use primary color for section title */
+}
+
+.patent-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.patent-details {
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.patent-details h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--text-light); /* Ensure consistent text color */
+}
+
+.patent-details p {
+    margin-bottom: 20px;
+}
+
+.patent-details .btn {
+    background-color: var(--accent-color); /* Use global accent color */
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--text-light); /* Button text color */
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.patent-details .btn:hover {
+    background-color: var(--accent-hover-color); /* Hover effect */
+}
+
+.patent-img img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#project-detail {
+    background-color: #111;
+    padding: 60px 20px;
+    margin-top: 40px;
+}
+
+.project-detail-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#project-detail h2 {
+    font-size: 3rem;
+    color: #ff3366;
+    margin-bottom: 40px; /* Add space between the title and the description */
+}
+
+.project-detail-container p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 40px; /* Space between the description and the image */
+    text-align: justify; /* Justify text for better alignment */
+    color: #bbb; /* Lighter color for the paragraph text */
+}
+
+.project-detail-container img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px; /* Space below the image */
+}
+
+/* Technologies Section */
+.project-tech {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 50px; /* Add space between the image and the technologies section */
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-tech h3 {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Space between title and list */
+    color: #ff3366;
+}
+
+.project-tech ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.project-tech ul li {
+    font-size: 1.2rem;
+    margin: 10px 0; /* Add space between list items */
+}
+
+.project-tech ul li::before {
+    content: "•";
+    color: #ff3366;
+    margin-right: 10px;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #ff3366;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 30px; /* Add space above the button */
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #ff6680;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-detail-container img {
+        max-width: 100%;
+    }
+
+    .project-tech {
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    .btn {
+        margin-top: 40px;
+    }
+}
